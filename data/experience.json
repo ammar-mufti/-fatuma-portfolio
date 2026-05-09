@@ -1,50 +1,54 @@
 {
   "roles": [
     {
-      "title": "Platform Delivery & Support Specialist",
-      "company": "Safaricom Telecommunications Ethiopia PLC",
-      "location": "Addis Ababa, Ethiopia",
-      "period": "Nov 2024 – Mar 2026",
+      "title": "Call Centre Specialist & Delighter",
+      "company": "Maids.cc",
+      "location": "United Arab Emirates",
+      "period": "Jan 2025 – Jan 2026",
       "bullets": [
-        "Delivered end-to-end digital platform rollouts by driving system readiness, executing deployments, and achieving 95% user adoption within the first month while improving operational efficiency by 30%",
-        "Managed end-to-end product lifecycle from ideation to launch, defining product vision and translating stakeholder insights into actionable, prioritized requirements for Agile development teams",
-        "Led the successful delivery of a digital product by coordinating the integration of multiple systems including CRM, payment platforms, Mobile App, Web App, and backend services, ensuring seamless data flow and end-to-end functionality",
-        "Acted as the bridge between business users, engineers, and external vendors to deliver and continuously enhance platforms while resolving system performance issues within SLA",
-        "Executed UAT and supported go-live activities to ensure smooth deployments with minimal disruption, while tracking platform performance and driving data-informed operational improvements",
-        "Designed and delivered training workshops and end-user guides for 200+ users, significantly enhancing platform usability and sustained adoption"
+        "Served as first point of contact for a high-volume client base, handling everything from routine enquiries to complaints that needed careful de-escalation.",
+        "Focused on first-call resolution, since callbacks indicated something had gone wrong the first time; the goal was always to close issues properly on the first attempt.",
+        "Logged all interactions in the CRM system, feeding into a broader effort to identify recurring friction points and improve the overall service flow."
       ]
     },
     {
-      "title": "Retail Experience Executive",
-      "company": "Safaricom Telecommunications Ethiopia PLC",
+      "title": "Manager & LMIS Encoder",
+      "company": "Ethiopian Overseas Worker, Taj PLC",
       "location": "Addis Ababa, Ethiopia",
-      "period": "Jul 2022 – Nov 2024",
+      "period": "Aug 2023 – Jan 2025",
       "bullets": [
-        "Managed 50+ daily customer interactions, delivering end-to-end support across Telecom and M-PESA services including onboarding, account updates, transactions, and payments",
-        "Drove sales performance by identifying customer needs and executing up-selling and cross-selling strategies to consistently exceed 100% of monthly targets across Consumer and Enterprise segments",
-        "Maintained 100% KYC compliance, resolved customer issues within SLA timelines, and managed inventory with full system-to-stock alignment"
+        "Oversaw day-to-day data operations for overseas worker placement, encoding worker profiles and tracking logistics movements through the LMIS platform.",
+        "Maintained system integrity during a chaotic operational period, which was not straightforward given inconsistent data quality from upstream sources.",
+        "Produced periodic reports for internal planning and strategic decision-making, supporting resource allocation and operational continuity."
       ]
     },
     {
-      "title": "Sales Operations Support Team Lead",
-      "company": "MultiChoice Ethiopia",
+      "title": "Public Health Intern",
+      "company": "St. Peter's Specialised Hospital",
       "location": "Addis Ababa, Ethiopia",
-      "period": "Nov 2021 – Jun 2022",
+      "period": "Jul 2022 – Jul 2023",
       "bullets": [
-        "Led a team supporting 50+ field sales agents, ensuring efficient system usage, operational coordination, and SLA compliance for escalated issue resolution",
-        "Developed tracking mechanisms for decoder sales, activations, and team tasks, enhancing performance monitoring and operational visibility",
-        "Trained 10+ team members and field agents on platform usage and operational procedures, and reduced payment errors by improving subscription payment processes"
+        "Rotated through internal medicine, surgery, obstetrics and paediatrics, gaining hands-on exposure to clinical decision-making under real resource constraints.",
+        "Developed a clearer understanding of where public health interventions land in practice versus how they are framed in theory, particularly in under-resourced settings.",
+        "Supported departmental administration and patient education alongside medical staff, bridging clinical workflows and community health considerations."
       ]
     },
     {
-      "title": "Customer Service Representative",
-      "company": "MultiChoice Ethiopia",
-      "location": "Addis Ababa, Ethiopia",
-      "period": "Aug 2020 – Nov 2021",
+      "title": "Translator & Customer Resolver",
+      "company": "Iconic Agency",
+      "location": "Ethiopia",
+      "period": "Jan 2023 – Jul 2023",
       "bullets": [
-        "Assisted 80+ customers daily with service requests, account support, and product inquiries, maintaining high service standards and resolving complaints efficiently",
-        "Trained and mentored new staff on service procedures and best practices, improving onboarding consistency and service quality across the team",
-        "Processed subscription payments, issued receipts, and managed sales inventory with 100% alignment between system records and physical stock"
+        "Resolved complex complaints and technical issues across language barriers, translating not just words but the underlying customer concern versus the formal issue on record."
+      ]
+    },
+    {
+      "title": "Customer Service & IT Systems Officer",
+      "company": "Ethiopian Embassy",
+      "location": "Riyadh, Saudi Arabia",
+      "period": "Feb 2018 – Aug 2018",
+      "bullets": [
+        "Supported customer service functions and IT system operations in a formal government environment, gaining early exposure to structured, process-driven working practices."
       ]
     }
   ]

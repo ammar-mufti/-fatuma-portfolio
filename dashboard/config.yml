@@ -1,8 +1,8 @@
 backend:
   name: github
-  repo: ammar-mufti/portfolio
+  repo: ammar-mufti/-fatuma-portfolio
   branch: main
-  base_url: https://cms-auth.muftiammar52.workers.dev
+  base_url: https://cms-auth-fatuma.muftiammar52.workers.dev
 
 
 media_folder: "projects"
@@ -53,6 +53,10 @@ collections:
             name: "tools"
             widget: "list"
             field: { label: "Tool", name: "tool", widget: "string" }
+          - label: "Languages"
+            name: "languages"
+            widget: "list"
+            field: { label: "Language", name: "language", widget: "string" }
 
   - name: "experience"
     label: "Experience"
@@ -119,7 +123,7 @@ collections:
         file: "data/pow_settings.json"
         fields:
           - { label: "Show Section Notice", name: "show_notice", widget: "boolean", default: true, hint: "Toggle to show or hide the notice below the proof of work cards" }
-          - { label: "Section Notice", name: "notice", widget: "text", required: false, hint: "Text shown below the proof of work cards. Leave blank to hide.", default: "All documents are redacted delivery artefacts. Contact me to discuss any project in detail." }
+          - { label: "Section Notice", name: "notice", widget: "text", required: false, hint: "Text shown below the proof of work cards. Leave blank to hide.", default: "" }
 
   - name: "sections"
     label: "Section Visibility"
@@ -131,7 +135,7 @@ collections:
           - { label: "Show Hero Section", name: "hero", widget: "boolean", default: true }
           - { label: "Show About Me Section", name: "about", widget: "boolean", default: true }
           - { label: "Show Experience Section", name: "experience", widget: "boolean", default: true }
-          - { label: "Show Proof of Work Section", name: "work", widget: "boolean", default: true }
+          - { label: "Show Proof of Work Section", name: "work", widget: "boolean", default: false }
           - { label: "Show Education & Certifications Section", name: "education", widget: "boolean", default: true }
 
   - name: "seo"

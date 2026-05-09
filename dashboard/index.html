@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio Dashboard — Ammar Mufti Mohammed</title>
+  <title>Portfolio Dashboard — Fatuma Jemal</title>
   <style>
 
     /* ── IDENTITY — thin top stripe only, no text bar ── */
@@ -13,7 +13,7 @@
       left: 0;
       right: 0;
       height: 3px;
-      background: linear-gradient(90deg, #1A1A2E 0%, #1A56DB 60%, #1A1A2E 100%);
+      background: linear-gradient(90deg, #2D5016 0%, #C4622D 60%, #2D5016 100%);
       z-index: 99990;
       pointer-events: none;
     }
@@ -24,13 +24,13 @@
       bottom: 170px;
       left: 24px;
       z-index: 99989;
-      background: #1A1A2E;
-      color: #6B7280;
+      background: #2D5016;
+      color: #C4C9B8;
       font-family: sans-serif;
       font-size: 11px;
       padding: 4px 12px;
       border-radius: 20px;
-      border: 1px solid #2D2D4A;
+      border: 1px solid #3D6B20;
       pointer-events: none;
       letter-spacing: 0.04em;
     }
@@ -41,9 +41,9 @@
       bottom: 228px;
       left: 24px;
       z-index: 99988;
-      background: #1A1A2E;
+      background: #2D5016;
       color: #fff;
-      border: 1px solid #2D2D4A;
+      border: 1px solid #3D6B20;
       border-radius: 50px;
       padding: 10px 18px;
       font-size: 13px;
@@ -438,7 +438,7 @@
 
   <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
 
-  <a href="https://ammar-mufti.github.io/portfolio" target="_blank" class="view-on-site-btn" aria-label="View Live Site">
+  <a href="https://YOUR-DEPLOY-URL" target="_blank" class="view-on-site-btn" aria-label="View Live Site">
     🌐 View Live Site
   </a>
 
@@ -606,7 +606,7 @@
       }
     }
 
-    function connectGA() { window.location.href = 'https://cms-auth.muftiammar52.workers.dev/ga-auth'; }
+    function connectGA() { window.location.href = 'https://cms-auth-fatuma.muftiammar52.workers.dev/ga-auth'; }
     function disconnectGA() {
       localStorage.removeItem('ga_access_token');
       localStorage.removeItem('ga_token_expiry');
@@ -634,7 +634,7 @@
 
       try {
         const res = await fetch(
-          'https://api.github.com/repos/ammar-mufti/portfolio/commits?per_page=25',
+          'https://api.github.com/repos/ammar-mufti/-fatuma-portfolio/commits?per_page=25',
           { headers: { 'Accept': 'application/vnd.github.v3+json' } }
         );
 

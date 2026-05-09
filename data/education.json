@@ -1,19 +1,23 @@
 {
-  "degree": "Bachelor of Arts in Sociology",
-  "university": "Mekelle University, Ethiopia",
+  "degree": "Bachelor of Science in Public Health",
+  "university": "Sante Medical College, Addis Ababa, Ethiopia",
   "period": "",
   "certifications": [
     {
-      "name": "Digital Product Management",
-      "issuer": "Alison"
+      "name": "Data Analysis Fundamentals (Nanodegree)",
+      "issuer": "Udacity"
     },
     {
-      "name": "Professional Foundations",
-      "issuer": "ALX"
+      "name": "Self-Leadership & Personal Development",
+      "issuer": ""
     },
     {
-      "name": "AWS Cloud Computing",
-      "issuer": "ALX"
+      "name": "ICT Application, Preventive Maintenance & Web Development",
+      "issuer": ""
+    },
+    {
+      "name": "Event Operations & Management",
+      "issuer": "Flawless International Business PLC"
     }
   ]
 }

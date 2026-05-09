@@ -1,28 +1,34 @@
 {
-  "summary": "Technical Product Owner with deep expertise in delivering and optimizing customer-facing digital platforms in high-volume environments. Adept at translating complex business needs into clear product requirements, driving 95% user adoption within the first month of launch and improving operational efficiency by 30%. Skilled in UAT, URS, vendor coordination, and cross-functional collaboration, bridging business and technology teams to deliver reliable, high-impact digital solutions.",
-  "summary2": "I bring a multilingual edge — fluent in English, native Amharic, and conversational Arabic — and a background shaped by working across diverse teams. I'm motivated by the intersection of people and technology: building products that actually work for the users they're meant to serve.",
+  "summary": "Public health graduate with a background spanning clinical rotations, overseas worker logistics management in Ethiopia, and customer-facing operations in the UAE. The common thread across these roles has been working in environments where communication gaps create real operational risk, and finding practical ways to close them. Fluent across five languages, which has been more a practical necessity than a formal qualification in the roles held.",
+  "summary2": "Currently seeking to bring that mix of health knowledge, data handling, and people experience into a team where operational quality and cross-functional delivery genuinely matter.",
   "core_skills": [
-    "Digital Platform Deployment & Rollout",
-    "Product Lifecycle Management",
-    "URS & UAT",
-    "Systems Integration",
-    "Performance Monitoring & Reporting",
-    "Agile Backlog Support",
-    "Stakeholder Collaboration",
-    "SLA & Incident Management",
-    "Training & User Adoption",
-    "KYC & Regulatory Compliance",
-    "Customer Journey Mapping"
+    "Cross-Cultural Communication",
+    "CRM & Data Systems",
+    "LMIS Data Management",
+    "Customer Issue Resolution",
+    "Monitoring & Evaluation",
+    "Public Health Operations",
+    "Multilingual Support",
+    "Planning & Coordination",
+    "First-Call Resolution",
+    "Reporting & Analysis",
+    "Team Collaboration",
+    "MS Office Suite"
   ],
   "tools": [
-    "CRM & Case Management Systems",
-    "Digital Sales & Distribution Platforms",
-    "Mobile Financial Services (M-PESA)",
-    "Ticketing & Incident Management",
-    "Agile & Backlog Tools (Jira)",
-    "Microsoft Office (Excel, PowerPoint, Outlook)",
-    "Data Reporting",
-    "API & Integrations",
-    "Database (working knowledge)"
+    "CRM Systems",
+    "LMIS Platforms",
+    "Virtual Collaboration Tools",
+    "Data Reporting & Analysis",
+    "Web Development (basic)",
+    "IT Maintenance",
+    "MS Word, Excel & PowerPoint"
+  ],
+  "languages": [
+    "Arabic (C2)",
+    "Amharic (C2)",
+    "English (C1)",
+    "Harari (C1)",
+    "French (A1)"
   ]
 }

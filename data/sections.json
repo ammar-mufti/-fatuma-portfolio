@@ -2,6 +2,6 @@
   "hero": true,
   "about": true,
   "experience": true,
-  "work": true,
+  "work": false,
   "education": true
 }
