@@ -18,12 +18,8 @@
       pointer-events: none;
     }
 
-    /* ── SITE LABEL — bottom LEFT, well clear of everything ── */
+    /* ── SITE LABEL — inside fab menu ── */
     .cms-site-label {
-      position: fixed;
-      bottom: 170px;
-      left: 24px;
-      z-index: 99989;
       background: #2D5016;
       color: #C4C9B8;
       font-family: sans-serif;
@@ -33,14 +29,47 @@
       border: 1px solid #3D6B20;
       pointer-events: none;
       letter-spacing: 0.04em;
+      display: inline-flex;
+      align-items: center;
     }
 
-    /* ── FLOATING BUTTONS — all on LEFT bottom, away from CMS top-right icons ── */
-    .view-on-site-btn {
+    /* ── FLOATING ACTION MENU ── */
+    #fab-menu {
       position: fixed;
-      bottom: 228px;
-      left: 24px;
-      z-index: 99988;
+      bottom: 24px;
+      right: 24px;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 10px;
+    }
+    #fab-items {
+      display: none;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 10px;
+    }
+    #fab-items.open { display: flex; }
+    #fab-toggle {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #C4622D;
+      color: #fff;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.18s, background 0.18s;
+      font-family: sans-serif;
+    }
+    #fab-toggle:hover { transform: scale(1.1); background: #A8511F; }
+
+    .view-on-site-btn {
       background: #2D5016;
       color: #fff;
       border: 1px solid #3D6B20;
@@ -56,14 +85,11 @@
       font-family: sans-serif;
       transition: transform 0.18s;
       text-decoration: none;
+      white-space: nowrap;
     }
     .view-on-site-btn:hover { transform: translateY(-2px); }
 
     .clarity-toggle-btn {
-      position: fixed;
-      bottom: 90px;
-      left: 24px;
-      z-index: 99988;
       background: #5C2D91;
       color: #fff;
       border: none;
@@ -78,14 +104,11 @@
       box-shadow: 0 4px 16px rgba(0,0,0,0.2);
       font-family: sans-serif;
       transition: transform 0.18s;
+      white-space: nowrap;
     }
     .clarity-toggle-btn:hover { transform: translateY(-2px); }
 
     .ga-toggle-btn {
-      position: fixed;
-      bottom: 24px;
-      left: 24px;
-      z-index: 99988;
       background: #E37400;
       color: #fff;
       border: none;
@@ -100,6 +123,7 @@
       box-shadow: 0 4px 16px rgba(0,0,0,0.2);
       font-family: sans-serif;
       transition: transform 0.18s;
+      white-space: nowrap;
     }
     .ga-toggle-btn:hover { transform: translateY(-2px); }
 
@@ -305,10 +329,6 @@
 
     /* ── AUDIT LOG PANEL ── */
     .audit-toggle-btn {
-      position: fixed;
-      bottom: 156px;
-      left: 24px;
-      z-index: 99988;
       background: #0F766E;
       color: #fff;
       border: none;
@@ -322,6 +342,7 @@
       gap: 8px;
       box-shadow: 0 4px 16px rgba(0,0,0,0.2);
       font-family: sans-serif;
+      white-space: nowrap;
       transition: transform 0.18s;
     }
     .audit-toggle-btn:hover { transform: translateY(-2px); }
@@ -434,21 +455,21 @@
 <body>
 
   <div class="cms-identity-bar"></div>
-  <div class="cms-site-label">⚙ Portfolio Dashboard</div>
 
   <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
 
-  <a href="https://fatuma-jemal.pages.dev" target="_blank" class="view-on-site-btn" aria-label="View Live Site">
-    🌐 View Live Site
-  </a>
-
-  <button class="clarity-toggle-btn" onclick="togglePanel('clarityPanel')" aria-label="Clarity">
-    🔥 Clarity
-  </button>
-
-  <button class="ga-toggle-btn" onclick="togglePanel('gaPanel')" aria-label="Analytics">
-    📊 Analytics
-  </button>
+  <div id="fab-menu">
+    <div id="fab-items">
+      <div class="cms-site-label">⚙ Portfolio Dashboard</div>
+      <a href="https://fatuma-jemal.pages.dev" target="_blank" class="view-on-site-btn" aria-label="View Live Site">
+        🌐 View Live Site
+      </a>
+      <button class="clarity-toggle-btn" onclick="togglePanel('clarityPanel')" aria-label="Clarity">
+        🔥 Clarity
+      </button>
+      <button class="ga-toggle-btn" onclick="togglePanel('gaPanel')" aria-label="Analytics">
+        📊 Analytics
+      </button>
 
   <!-- CLARITY PANEL -->
   <div class="clarity-panel" id="clarityPanel">
@@ -521,10 +542,13 @@
     </div>
   </div>
 
-  <!-- Audit Log Button -->
-  <button class="audit-toggle-btn" onclick="togglePanel('auditPanel')" aria-label="Audit Log">
-    📋 Audit Log
-  </button>
+      <!-- Audit Log Button -->
+      <button class="audit-toggle-btn" onclick="togglePanel('auditPanel')" aria-label="Audit Log">
+        📋 Audit Log
+      </button>
+    </div>
+    <button id="fab-toggle" aria-label="Toggle menu">🔧</button>
+  </div>
 
   <!-- Audit Log Panel -->
   <div class="audit-panel" id="auditPanel">
@@ -707,5 +731,15 @@
     }
   </script>
 
+<script>
+  (function() {
+    var toggle = document.getElementById('fab-toggle');
+    var items = document.getElementById('fab-items');
+    toggle.addEventListener('click', function() {
+      var open = items.classList.toggle('open');
+      toggle.textContent = open ? '✕' : '🔧';
+    });
+  })();
+</script>
 </body>
 </html>
