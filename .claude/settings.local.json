@@ -11,7 +11,8 @@
       "Bash(curl -L \"https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh7USSwiPGQ.woff2\" -o \"Lato-700.woff2\")",
       "Bash(curl -s \"https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap\" -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\)\")",
       "Bash(curl *)",
-      "Bash(git config *)"
+      "Bash(git config *)",
+      "Bash(powershell -Command \"Select-String -Path 'index.html' -Pattern 'Fatuma-Photo\\\\.jpg'\")"
     ]
   }
 }
