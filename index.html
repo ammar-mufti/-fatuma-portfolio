@@ -1262,11 +1262,11 @@
 
     const photo = document.getElementById('hero-photo');
     photo.parentElement.style.display = '';
-    photo.onerror = () => photo.parentElement.style.display = 'none';
+    photo.onerror = () => { photo.onerror = null; };
     photo.src = h.photo;
     photo.alt = h.name || 'Fatuma Jemal';
     const photoWebp = document.getElementById('hero-photo-webp');
-    if (photoWebp) photoWebp.srcset = h.photo.replace(/\.(jpg|jpeg|png)$/i, '.webp');
+    if (photoWebp) photoWebp.srcset = '';
     document.title = h.tab_title || 'Fatuma Jemal · Portfolio';
 
     // Update footer links dynamically
