@@ -33,7 +33,7 @@
     "jobTitle": "Public Health Professional",
     "description": "Public health professional with a background spanning clinical rotations, overseas worker logistics management, and customer-facing operations in the UAE.",
     "url": "https://fatuma-jemal.pages.dev/",
-    "image": "https://fatuma-jemal.pages.dev/Fatuma-Photo.jpg",
+    "image": "https://fatuma-jemal.pages.dev/Fatuma-Photo.jpeg",
     "email": "fatumajemal36@gmail.com",
     "knowsLanguage": ["Arabic", "Amharic", "English", "French", "Harari"],
     "workLocation": {
@@ -1244,10 +1244,10 @@
         <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         Download Resume
       </a>
-      <a href="https://docs.google.com/viewer?url=https://fatuma-jemal.pages.dev/${esc(h.resume_filename)}" target="_blank" class="btn btn-outline" onclick="gtag('event', 'resume_view', {'event_category': 'Resume', 'event_label': 'View Resume Online'});">
-        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      <button class="btn btn-outline" onclick="openResumeModal(); gtag('event', 'resume_view', {'event_category': 'Resume', 'event_label': 'View Resume Online'});">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
         View Resume Online
-      </a>`;
+      </button>`;
 
     document.getElementById('hero-contacts').innerHTML = `
       <a href="mailto:${esc(h.email)}" class="hero-email">
@@ -1489,5 +1489,35 @@
       <rect x="13" y="15" width="8" height="6" rx="1"/>
     </svg>
   </a>
+<!-- Resume Modal -->
+<div id="resume-modal" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.85);backdrop-filter:blur(4px);" onclick="if(event.target===this)closeResumeModal()">
+  <div style="position:relative;width:90%;max-width:860px;height:90vh;margin:5vh auto;background:#fff;border-radius:12px;overflow:hidden;display:flex;flex-direction:column;">
+    <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 20px;background:var(--primary);color:#fff;">
+      <span style="font-weight:600;font-size:0.95rem;">Fatuma Jemal — Resume</span>
+      <div style="display:flex;gap:12px;align-items:center;">
+        <a id="resume-download-btn" href="#" download="Fatuma-Jemal-CV.pdf" style="color:#fff;font-size:0.85rem;text-decoration:none;opacity:0.9;">⬇ Download</a>
+        <button onclick="closeResumeModal()" style="background:none;border:none;color:#fff;font-size:1.4rem;cursor:pointer;line-height:1;">&times;</button>
+      </div>
+    </div>
+    <iframe id="resume-iframe" src="" style="flex:1;border:none;width:100%;"></iframe>
+  </div>
+</div>
+
+<script>
+function openResumeModal() {
+  const filename = document.querySelector('[data-resume]')?.dataset.resume || 'Fatuma-Jemal-CV.pdf';
+  const fileUrl = `https://fatuma-jemal.pages.dev/${filename}`;
+  document.getElementById('resume-iframe').src = `https://docs.google.com/viewer?url=${encodeURIComponent(fileUrl)}&embedded=true`;
+  document.getElementById('resume-download-btn').href = fileUrl;
+  document.getElementById('resume-modal').style.display = 'block';
+  document.body.style.overflow = 'hidden';
+}
+function closeResumeModal() {
+  document.getElementById('resume-modal').style.display = 'none';
+  document.getElementById('resume-iframe').src = '';
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => { if(e.key === 'Escape') closeResumeModal(); });
+</script>
 </body>
 </html>
