@@ -1261,6 +1261,7 @@
       </a>`;
 
     const photo = document.getElementById('hero-photo');
+    photo.parentElement.style.display = '';
     photo.onerror = () => photo.parentElement.style.display = 'none';
     photo.src = h.photo;
     photo.alt = h.name || 'Fatuma Jemal';
