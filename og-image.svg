@@ -1,0 +1,52 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>Fatuma Jemal — Open Graph preview image</title>
+  <desc>Portfolio preview card for Fatuma Jemal, Public Health Professional</desc>
+  <defs>
+    <clipPath id="photoClip">
+      <circle cx="220" cy="315" r="180"/>
+    </clipPath>
+    <clipPath id="photoClipInner">
+      <circle cx="220" cy="315" r="170"/>
+    </clipPath>
+  </defs>
+
+  <rect width="1200" height="630" fill="#FAF8F5"/>
+  <rect x="0" y="0" width="8" height="630" fill="#C4622D"/>
+  <rect x="0" y="610" width="1200" height="20" fill="#C4622D"/>
+
+  <rect x="60" y="80" width="320" height="470" rx="160" fill="#EDE0D4" opacity="0.5"/>
+
+  <circle cx="220" cy="315" r="182" fill="#C4622D" opacity="0.15"/>
+  <circle cx="220" cy="315" r="174" fill="#E8D5C4"/>
+
+  <image
+    href="https://fatuma-jemal.pages.dev/Fatuma-Photo.jpeg"
+    x="50" y="145"
+    width="340" height="340"
+    clip-path="url(#photoClipInner)"
+    preserveAspectRatio="xMidYMid slice"
+  />
+
+  <circle cx="220" cy="315" r="174" fill="none" stroke="#C4622D" stroke-width="4"/>
+
+  <line x1="440" y1="120" x2="440" y2="510" stroke="#E8D5C4" stroke-width="1.5"/>
+
+  <text x="490" y="200" font-family="Georgia, serif" font-size="72" font-weight="700" fill="#1C1C1C" letter-spacing="-1">Fatuma</text>
+  <text x="490" y="275" font-family="Georgia, serif" font-size="72" font-weight="700" fill="#1C1C1C" letter-spacing="-1">Jemal</text>
+
+  <rect x="490" y="295" width="180" height="4" fill="#C4622D" rx="2"/>
+
+  <text x="490" y="345" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#C4622D" letter-spacing="0.5">Public Health Professional</text>
+  <text x="490" y="375" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#C4622D" letter-spacing="0.5">Customer Experience · Data &amp; Operations</text>
+
+  <text x="490" y="430" font-family="Arial, sans-serif" font-size="18" fill="#5A5A5A">Bridging public health, data operations, and</text>
+  <text x="490" y="455" font-family="Arial, sans-serif" font-size="18" fill="#5A5A5A">customer experience across the UAE and East Africa.</text>
+
+  <rect x="490" y="490" width="220" height="42" rx="6" fill="#C4622D"/>
+  <text x="600" y="517" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#FAF8F5" text-anchor="middle">View Portfolio</text>
+
+  <text x="490" y="560" font-family="Arial, sans-serif" font-size="14" fill="#9A8A7A">fatuma-jemal.pages.dev</text>
+
+  <circle cx="1130" cy="80" r="120" fill="#C4622D" opacity="0.06"/>
+  <circle cx="1160" cy="580" r="80" fill="#C4622D" opacity="0.06"/>
+</svg>
