@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 1200px; height: 630px; overflow: hidden; background: #FAF8F5; font-family: Arial, sans-serif; position: relative; }
+.left-bar { position: absolute; left: 0; top: 0; width: 8px; height: 630px; background: #C4622D; }
+.bottom-bar { position: absolute; left: 0; bottom: 0; width: 1200px; height: 20px; background: #C4622D; }
+.blob { position: absolute; left: 60px; top: 80px; width: 320px; height: 470px; border-radius: 160px; background: #EDE0D4; opacity: 0.5; }
+.photo-ring { position: absolute; left: 40px; top: 133px; width: 364px; height: 364px; border-radius: 50%; background: #E8D5C4; border: 4px solid #C4622D; overflow: hidden; }
+.photo-ring img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+.divider { position: absolute; left: 440px; top: 120px; width: 1.5px; height: 390px; background: #E8D5C4; }
+.content { position: absolute; left: 490px; top: 100px; }
+.name { font-family: Georgia, serif; font-size: 72px; font-weight: 700; color: #1C1C1C; line-height: 1.05; letter-spacing: -1px; margin-bottom: 16px; }
+.underline { width: 180px; height: 4px; background: #C4622D; border-radius: 2px; margin-bottom: 24px; }
+.title { font-size: 22px; color: #C4622D; line-height: 1.5; margin-bottom: 24px; }
+.desc { font-size: 18px; color: #5A5A5A; line-height: 1.6; margin-bottom: 32px; }
+.btn { display: inline-block; background: #C4622D; color: #FAF8F5; font-size: 16px; font-weight: 600; padding: 12px 40px; border-radius: 6px; margin-bottom: 24px; }
+.url { font-size: 14px; color: #9A8A7A; }
+.circle1 { position: absolute; right: 0; top: 0; width: 240px; height: 240px; border-radius: 50%; background: #C4622D; opacity: 0.06; transform: translate(40%, -40%); }
+.circle2 { position: absolute; right: 0; bottom: 20px; width: 160px; height: 160px; border-radius: 50%; background: #C4622D; opacity: 0.06; transform: translateX(30%); }
+</style>
+</head>
+<body>
+<div class="left-bar"></div>
+<div class="bottom-bar"></div>
+<div class="blob"></div>
+<div class="photo-ring">
+  <img src="Fatuma-Photo.jpeg" alt="Fatuma Jemal"/>
+</div>
+<div class="divider"></div>
+<div class="content">
+  <div class="name">Fatuma<br>Jemal</div>
+  <div class="underline"></div>
+  <div class="title">Public Health Professional<br>Customer Experience · Data &amp; Operations</div>
+  <div class="desc">Bridging public health, data operations, and<br>customer experience across the UAE and East Africa.</div>
+  <div class="btn">View Portfolio</div><br>
+  <div class="url">fatuma-jemal.pages.dev</div>
+</div>
+<div class="circle1"></div>
+<div class="circle2"></div>
+</body>
+</html>
